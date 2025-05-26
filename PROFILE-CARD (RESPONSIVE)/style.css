@@ -1,0 +1,106 @@
+@font-face {
+  font-family: qualyBold;
+  src: url(Fonts/qualyBold.ttf);
+}
+
+@font-face {
+  font-family: AtkinsonHyperlegible-Regular;
+  src: url(Fonts/AtkinsonHyperlegible-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: url(Images/blob-background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainCard {
+  min-width: 30%;
+  max-width: 30%;
+  height: auto;
+  border-radius: 24px;
+  background-color: #ff512f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-shrink: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.profileBox {
+  height: 150px;
+  width: 150px;
+  background-image: url(Images/ProileCrd.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  margin: 2em 0 0 0;
+}
+
+.socialInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  border-radius: 24px;
+  background-color: #000;
+  color: #fff;
+  margin: 1.5em 0 0 0;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(256, 256, 256, 0.3);
+}
+
+.socialInfo h1 {
+  font-family: qualyBold;
+  font-size: 2em;
+  padding: 0.5em 0 0 0;
+}
+
+.socialInfo p {
+  font-family: AtkinsonHyperlegible-Regular;
+  padding: 0 0 1.2em 0;
+}
+
+.paraInfo {
+  width: 70%;
+  padding: 1em 0 0 0;
+  margin-bottom: auto;
+}
+
+.socialIcons {
+  min-width: 60%;
+  padding: 0.8em 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.socialIcons a {
+  color: #fff;
+  font-size: 26px;
+}
+
+@media (max-width: 768px) {
+  .mainCard {
+    min-width: 90%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .mainCard {
+    min-width: 50%;
+  }
+}

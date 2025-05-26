@@ -1,0 +1,1156 @@
+@font-face {
+  font-family: Atkinson-Regular;
+  src: url(Fonts/AtkinsonHyperlegible-Regular.ttf);
+}
+
+@font-face {
+  font-family: Atkinson-Bold;
+  src: url(Fonts/AtkinsonHyperlegible-Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Atkinson-Regular;
+}
+
+/* NAVIGATION-BAR STYLING */
+nav {
+  font-family: Atkinson-Regular;
+  background-color: #2e4ae1;
+  text-transform: uppercase;
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  justify-content: space-around;
+  flex-shrink: 1;
+  min-width: 100%;
+  border: none;
+}
+
+/* NAVBAR ANCHOR-LINKS */
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.3em 1em;
+}
+
+nav a:hover {
+  background-color: #1891ff;
+  transition: 0.375s all ease-out;
+}
+
+nav a.active {
+  background-color: #1891ff;
+}
+
+/* NAVBAR LIST-STYLING */
+nav ul {
+  min-width: auto;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 1;
+  gap: 20px;
+}
+
+/* NAVBAR COMPANY_LOGO */
+nav img {
+  width: 180px;
+  padding: 1.5em 0;
+}
+
+/* HAMBURGER-NAVBAR STYLING */
+.ham-menu {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* SIDEBAR STYLING */
+.sidebar {
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #2e4ae1;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  display: none;
+  z-index: 999;
+  position: fixed;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1em 0;
+}
+
+/* SIDEBAR ANCHOR LINKS */
+.sidebar a {
+  display: block;
+  width: 100%;
+  padding: 1em 0;
+}
+
+/* SIDEBAR LIST ITEMS */
+.sidebar li {
+  min-width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+/* CLOSE-BUTTON STYLING */
+.close-btn {
+  width: 20%;
+  text-align: center;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+/* CLOSE-BUTTON ANCHOR LINK */
+.close-btn a {
+  padding: 1em;
+  width: auto;
+}
+
+body {
+  font-family: Atkinson-Bold;
+}
+
+/* INTRODUCTION-SECTION */
+.intro-section {
+  background-color: #2e4ae1;
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 1;
+  padding: 4em 0 0 0;
+}
+
+.intro-section img {
+  width: 60%;
+  border-radius: 6px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+.intro-contents {
+  width: 74%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.h1-box {
+  width: 24%;
+  font-size: 2em;
+  flex-shrink: 1;
+}
+
+.h1-box h1 {
+  font-family: Atkinson-Bold;
+}
+
+.h1-box p {
+  font-family: Atkinson-Regular;
+  font-size: 16px;
+  padding: 1em 0 0 0;
+}
+
+/* ABOUT-US SECTION */
+.About-Us {
+  width: 100%;
+  margin: 3em 0;
+  padding: 1em 0;
+  font-family: Atkinson-Regular;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-shrink: 1;
+}
+
+.About-Us h2 {
+  font-family: Atkinson-Bold;
+  font-size: 4em;
+  margin-bottom: auto;
+}
+
+.paraAboutUs {
+  width: 35%;
+}
+
+.sImg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.sImg img {
+  max-width: 80%;
+  border-radius: 8px;
+}
+
+/* SERVICE-SECTION */
+.serviceHeader {
+  display: flex;
+  width: 100%;
+}
+
+.serviceHeader h2 {
+  font-size: 4em;
+  margin-top: 1.5em;
+  margin-bottom: 0.2em;
+  margin-left: 10%;
+}
+
+.serviceSection {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.serviceSection p {
+  font-family: Atkinson-Regular;
+}
+
+/* SERVICE_FEATURE_STYLING */
+.even {
+  border: 0.5px solid #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 0 1 25%;
+  text-align: center;
+  gap: 5px;
+  padding: 1em;
+}
+
+.odd {
+  border: 1px solid #fff;
+  background-color: #1891ff;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 0 1 25%;
+  text-align: center;
+  gap: 5px;
+  padding: 1em;
+}
+
+.project-sec {
+  background-color: rgb(247, 247, 247);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10% 0 0 0;
+  padding: 10% 0 4em 0;
+  gap: 4em;
+}
+
+.project-sec h2 {
+  font-size: 3em;
+}
+
+.project-sec p {
+  font-family: Atkinson-Regular;
+  margin: 1em 0 0 0;
+}
+
+.project-even {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.project-even img {
+  min-width: 45%;
+  flex: 0 1 50%;
+}
+
+.even-info {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 40%;
+}
+
+.project-odd {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.odd-info {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 50%;
+}
+
+.project-odd img {
+  min-width: 40%;
+  flex: 0 1 45%;
+}
+
+footer {
+  background-color: #2e4ae1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2em 0 0 0;
+}
+
+.footHead {
+  width: 80%;
+  margin: 1em 0 0.5em 0;
+  font-size: 2em;
+  color: #fff;
+}
+
+.contact-wrapper {
+  font-family: Atkinson-Regular;
+  color: #ffff;
+  min-width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 0 2em 0;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-section input {
+  padding: 0.8em 3em;
+  min-width: 100%;
+  flex-shrink: 1;
+  border: none;
+}
+
+.left-section input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.left-section textarea {
+  height: 100px;
+  width: 100%;
+  padding: 0.5em;
+  border: none;
+}
+
+.left-section button {
+  background-color: #1891ff;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  min-width: 100%;
+  font-family: Atkinson-Regular;
+  font-size: 1.2em;
+  padding: 0.5em 1.5em;
+  margin-bottom: 2em;
+  border: none;
+  border-radius: 4px;
+}
+
+.left-section button:hover {
+  background-color: #2e4ae1;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
+.row-1,
+.row-2,
+.row-3,
+.row-4 {
+  display: flex;
+}
+
+.row-1,
+.row-2 {
+  gap: 1em;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0 0 0;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 0.8em;
+  margin: 1rem 0 0 0;
+}
+
+.right-section a,
+.end-section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.endWrapper {
+  background-color: rgb(23, 45, 160);
+  font-family: Atkinson-Regular;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.end-section {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+/* SMALLER DEVICES XS - IPHONE SE , 4  */
+@media (max-width: 374.98px) {
+  .hideOnMobile {
+    display: none;
+  }
+
+  /* NAV-BAR STYLING */
+  nav {
+    justify-content: space-between !important;
+  }
+
+  nav img {
+    width: 120px;
+    margin-left: 2.5em;
+  }
+
+  /* HAM-BURGER MENU */
+  .ham-menu {
+    display: flex;
+    margin-left: auto;
+  }
+
+  /* SIDEBAR STYLING */
+  .sidebar {
+    min-width: 100%;
+  }
+
+  .sidebar li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+
+  .sidebar li a {
+    width: 80%;
+  }
+
+  /* INTRODUCTION-SECTION STYLING */
+  .intro-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+  }
+
+  .intro-contents img {
+    width: 80%;
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+  }
+
+  .intro-contents {
+    background-color: #2e4ae1;
+    color: #fff;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 2em 0 0 0;
+  }
+
+  .h1-box {
+    min-width: 80%;
+    padding: 2em 0;
+  }
+
+  .h1-box h1 {
+    font-size: 1em;
+  }
+
+  .h1-box p {
+    font-family: Atkinson-Regular;
+    font-size: 16px;
+  }
+
+  .About-Us {
+    flex-direction: column;
+  }
+
+  .About-Us h2 {
+    font-size: 3.5em;
+    margin-right: auto;
+    margin-left: 0.6em;
+  }
+
+  .paraAboutUs {
+    width: 80%;
+    text-align: left;
+    margin: 1em 0;
+  }
+
+  /* SERVICE-SECTION */
+  .even,
+  .odd {
+    flex: 0 1 80%;
+    margin: 15px;
+  }
+
+  .project-sec {
+    width: 100%;
+  }
+
+  .project-even {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .project-odd {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  /* FOOTER-SECTION */
+
+  .contact-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footHead {
+    width: 90%;
+    margin: 1em 0 0.5em 0;
+  }
+
+  .row-1,
+  .row-2,
+  .row-3,
+  .row-4 {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .left-section {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-section input {
+    padding: 1em 0;
+  }
+
+  .right-section {
+    width: 90%;
+  }
+
+  .end-section {
+    flex-direction: column;
+    width: 90%;
+    gap: 1rem;
+  }
+
+  .copyright,
+  .social-icons {
+    display: flex;
+  }
+}
+
+/* MEDIUM DEVICES - IPHONE 12PRO , IQOO 7  */
+@media (min-width: 375px) and (max-width: 575.98px) {
+  /* Slightly larger tap targets */
+  .hideOnMobile {
+    display: none;
+  }
+
+  /* NAV-BAR STYLING */
+  nav {
+    justify-content: space-between !important;
+  }
+
+  nav img {
+    width: 120px;
+    margin-left: 2.5em !important;
+  }
+
+  /* HAM-BURGER MENU */
+  .ham-menu {
+    display: flex;
+    margin-left: auto;
+  }
+
+  /* SIDEBAR STYLING */
+  .sidebar {
+    min-width: 100%;
+  }
+
+  .sidebar li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+
+  .sidebar li a {
+    width: 80%;
+  }
+
+  /* INTRODUCTION-SECTION STYLING */
+  .intro-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+  }
+
+  .intro-contents img {
+    width: 80%;
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+  }
+
+  /* INTRO-LAYOUT */
+  .intro-contents {
+    background-color: #2e4ae1;
+    color: #fff;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 4em 0 0 0;
+  }
+
+  .h1-box {
+    min-width: 80%;
+    padding: 2em 0;
+  }
+
+  .h1-box h1 {
+    font-size: 1.5em;
+  }
+
+  .h1-box p {
+    font-family: Atkinson-Regular;
+    font-size: 16px;
+  }
+
+  /* ABOUT_US_SECTION */
+  .About-Us {
+    flex-direction: column;
+  }
+
+  .About-Us h2 {
+    margin-right: auto;
+    margin-left: 0.7em;
+  }
+
+  .paraAboutUs {
+    width: 80%;
+    text-align: left;
+    margin: 1em 0;
+  }
+
+  /* SERVICE-SECTION */
+  .even,
+  .odd {
+    flex: 0 1 80%;
+    margin: 15px;
+    padding: 3em;
+  }
+
+  .project-sec {
+    max-width: 100%;
+  }
+
+  .project-even {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .project-odd {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  /* FOOTER-SECTION */
+  .contact-wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 80%;
+  }
+
+  .footHead {
+    width: 100%;
+    /* margin: 1em 0 0.5em 0; */
+  }
+
+  .footHead h2 {
+    margin-left: 1em;
+  }
+
+  .row-1,
+  .row-2,
+  .row-3,
+  .row-4 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .left-section input,
+  textarea {
+    padding: 1em 0;
+  }
+
+  .left-section button {
+    margin: 0.5em 0 0 0;
+    padding: 0.8em 0;
+  }
+
+  .right-section {
+    width: 90%;
+    margin: 3em 0 0 0;
+  }
+
+  .end-section {
+    flex-direction: column;
+    width: 80%;
+    gap: 1.5rem;
+  }
+
+  .copyright,
+  .social-icons {
+    display: flex;
+  }
+}
+
+/* PHONES SLIGHTLY LARGER THAN IPHONE 11 , 12 , IQOO 7  */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* NAVBAR-LAYOUT */
+  nav img {
+    margin-left: 2em !important;
+  }
+
+  .sidebar {
+    width: 80%;
+  }
+
+  .sidebar li {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sidebar a {
+    width: 80%;
+  }
+
+  /* INTRO-LAYOUT */
+  .intro-contents {
+    min-width: 90%;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .intro-contents img {
+    width: 100%;
+    height: auto;
+  }
+
+  .h1-box {
+    margin: 2em 0 0 0;
+    min-width: 100%;
+  }
+
+  .h1-box h1 {
+    font-size: 1.5em !important;
+  }
+
+  /* ABOUT-US_SECTION */
+  .About-Us {
+    flex-direction: column;
+  }
+
+  .About-Us h2 {
+    margin-right: auto;
+    margin-left: 1em;
+  }
+
+  .paraAboutUs {
+    width: 80%;
+    text-align: left;
+    margin: 1em 0;
+  }
+
+  .even,
+  .odd {
+    flex: 0 1 35%;
+    margin: 10px;
+  }
+
+  .project-sec {
+    width: 100%;
+  }
+
+  .project-even {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .project-odd {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .contact-wrapper {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .footHead {
+    width: 80%;
+    margin: 1em 0 0.5em 0;
+  }
+
+  .row-1,
+  .row-2,
+  .row-3,
+  .row-4 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .left-section input,
+  textarea {
+    padding: 1em 0;
+  }
+
+  .right-section {
+    border: 1px solid #fff;
+    width: 100%;
+  }
+}
+
+/* iPad Air, Surface Go */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* NAVBAR-LAYOUT */
+  .hideOnMobile {
+    display: none;
+  }
+
+  nav img {
+    width: 140px;
+    margin-left: 2.5em;
+  }
+
+  .ham-menu {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .sidebar {
+    width: 80%;
+  }
+
+  .sidebar li {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sidebar a {
+    width: 80%;
+  }
+
+  /* INTRO-SECTION */
+  .intro-section {
+    height: auto;
+  }
+
+  .intro-contents {
+    width: 90%;
+    margin: 8em 0 4em 0;
+  }
+
+  .intro-contents img {
+    width: 60%;
+  }
+
+  .h1-box {
+    width: 25%;
+  }
+
+  .h1-box h1 {
+    font-size: 1em;
+  }
+
+  .h1-box p {
+    font-size: 16px;
+  }
+
+  /* ABOUT-US_SECTION */
+  .About-Us {
+    flex-direction: column;
+  }
+
+  .About-Us h2 {
+    margin-right: auto;
+    margin-left: 1.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .paraAboutUs {
+    width: 80%;
+  }
+
+  /* SERVICE_SECTION */
+  .even,
+  .odd {
+    flex: 0 1 35%;
+    margin: 10px;
+  }
+
+  .project-even {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .project-odd {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .contact-wrapper {
+    width: 80%;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+/* Phablet/Tablet Transition Range */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* NAVBAR-LAYOUT */
+  .hideOnMobile {
+    display: none;
+  }
+
+  nav img {
+    margin-left: 5em;
+  }
+
+  .ham-menu {
+    display: flex;
+    margin-left: auto;
+  }
+
+  /* INTRO-LAYOUT */
+  .intro-section {
+    height: auto;
+  }
+
+  .intro-contents {
+    width: 80%;
+    margin: 8em 0 4em 0;
+  }
+
+  .intro-contents h1 {
+    font-size: 1em;
+  }
+
+  .h1-box {
+    width: 25%;
+  }
+}
+
+/* MEDIUM-TABLETS */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* NAVBAR-LAYOUT */
+  nav li a {
+    font-size: 15px;
+  }
+
+  nav img {
+    margin-left: 5em;
+  }
+
+  /* INTRO-LAYOUT */
+  .intro-contents {
+    width: 85%;
+  }
+
+  .intro-contents h1 {
+    font-size: 1.3em;
+  }
+
+  /* RESPONSIVE-LAYOUT_ONLY_FOR_BIG_SCREENS */
+  .wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* SERVICE-SECTION */
+  .serviceSection {
+    width: 80%;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .even,
+  .odd {
+    flex: 0 1 28%;
+    padding: 2em;
+  }
+}
+
+/* NEST-HUB MAX */
+@media (min-width: 1200px) {
+  /* NAVBAR-LAYOUT */
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+  }
+
+  /* INTRO-LAYOUT */
+  .intro-contents {
+    width: 80%;
+    justify-content: space-between;
+  }
+
+  .intro-contents img {
+    width: 60%;
+  }
+
+  .h1-box {
+    width: 25%;
+  }
+
+  .intro-contents h1 {
+    font-size: 1.7em;
+  }
+
+  .intro-contents p {
+    font-size: 18px;
+  }
+
+  /* RESPONSIVE_LAYOUT_FOR_BIG_SCREENS */
+  .wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* SERVICE-SECTION */
+  .serviceSection {
+    width: 80%;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .even,
+  .odd {
+    flex: 0 1 30%;
+    padding: 2em;
+  }
+
+  .project-even img {
+    width: 50%;
+  }
+}
+/* LAPTOPS - ASUS TUF A15 , A17 */
+@media (min-width: 1440px) {
+  /* INTRO-SECTION */
+  .intro-contents {
+    justify-content: space-between;
+    width: 75%;
+  }
+
+  .intro-contents img {
+    width: 50%;
+  }
+
+  .h1-box {
+    width: 20%;
+  }
+
+  /* RESPONSIVE_LAYOUT_FOR_BIG_SCREENS */
+  .wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* SERVICE_SECTION */
+  .serviceSection {
+    width: 80%;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .even,
+  .odd {
+    flex: 0 1 25%;
+    padding: 3em;
+    gap: 8px;
+  }
+}

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Devour-Business Website</title>
+</head>
+
+<body>
+    <nav>
+        <!-- NAVIGATION BAR FOR DESKTOPS/LAPTOPS/LARGE-TABLETS -->
+        <img src="Images/devour_white.png" alt="Company_Logo">
+        <ul class="hideOnMobile">
+            <li class="hideOnMobile"><a href="#" class="active">Home</a></li>
+            <li class="hideOnMobile"><a href="#">About</a></li>
+            <li class="hideOnMobile"><a href="#">Services</a></li>
+            <li class="hideOnMobile"><a href="#">Projects</a></li>
+            <li class="hideOnMobile"><a href="#">Contacts</a></li>
+        </ul>
+
+        <!-- NAVIGATION-BAR FOR MOBILES/XS-MOBILES/MEDIUM SIZE TABLETS -->
+        <!-- HAMBURGER-BUTTON -->
+        <div class="ham-menu">
+            <a href="#" onclick="openSideBar()"><i class="fa-solid fa-bars fa-2x"></i></a>
+        </div>
+
+        <ul class="sidebar">
+            <div class="close-btn">
+                <a href="#" onclick="closeSideBar()"><i class="fa-solid fa-xmark fa-2x"></i></a>
+            </div>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <!-- INTRODUCTION-SECTION -->
+    <div class="intro-section">
+        <div class="intro-contents">
+
+            <div class="h1-box">
+                <h1>Business for Every Entrepreneur</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum laboriosam labore possimus recusandae
+                    quasi dolor error, odio iste adipisci, non in necessitatibus
+                </p>
+            </div>
+
+            <!-- INTRODUCTION-SECTION IMAGE-->
+            <img src="Images/pic1.jpg" alt="Staff_image">
+        </div>
+    </div>
+
+    <!-- ABOUT-US SECTION -->
+    <div class="About-Us">
+        <h2>About Us</h2>
+
+        <div class="paraAboutUs">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book.
+                <br>
+                It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                essentially
+                unchanged.
+            </p>
+        </div>
+    </div>
+
+    <!-- STAFF-IMAGE -->
+    <div class="sImg">
+        <img src="Images/pic2.jpg" alt="About_Section_Image">
+    </div>
+
+    <!-- SERVICE-SECTION -->
+    <div class="serviceHeader">
+        <h2>Services</h2>
+    </div>
+
+    <!-- RESPONSIVE-WRAPPER_FOR_BIG_SCREENS -->
+    <div class="wrapper">
+        <div class="serviceSection">
+
+            <!-- ODD-EVEN_SECTIONS/SERVICES-INFO -->
+            <div class="even">
+                <i class="fa-solid fa-city fa-3x"></i>
+                <h2>Business</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati vero tenetur ut dicta velit
+                    perferendis dolorem deserunt cumque.</p>
+            </div>
+
+
+            <div class="odd">
+                <i class="fa-solid fa-hand-holding-dollar fa-3x"></i>
+                <h2>Finance</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati vero tenetur ut dicta velit
+                    perferendis dolorem deserunt cumque.</p>
+            </div>
+
+
+            <div class="even">
+                <i class="fa-solid fa-bullhorn fa-3x"></i>
+                <h2>Marketing</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati vero tenetur ut dicta velit
+                    perferendis dolorem deserunt cumque.</p>
+            </div>
+
+            <div class="odd">
+                <i class="fa-solid fa-comments fa-3x"></i>
+                <h2>Consultancy</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati vero tenetur ut dicta velit
+                    perferendis dolorem deserunt cumque.</p>
+            </div>
+
+            <div class="even">
+                <i class="fa-solid fa-people-group fa-3x"></i>
+                <h2>Human Resource</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati vero tenetur ut dicta velit
+                    perferendis dolorem deserunt cumque.</p>
+            </div>
+
+            <div class="odd">
+                <i class="fa-solid fa-recycle fa-3x"></i>
+                <h2>Recycle</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati vero tenetur ut dicta velit
+                    perferendis dolorem deserunt cumque.</p>
+            </div>
+
+        </div>
+    </div>
+    <!-- END_OF_SERVICE_SECTION -->
+
+
+    <!-- PROJECT_SECTION -->
+    <div class="project-sec">
+        <div class="project-even">
+            <div class="even-info">
+                <h2>Project 1.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure repudiandae beatae laborum tenetur
+                    vitae
+                    assumenda, in voluptatum facilis corrupti, asperiores iste quas non voluptatibus id porro delectus
+                    nesciunt recusandae modi consectetur!</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, voluptatibus id. Amet nihil cum, ut
+                    ratione architecto facere perspiciatis fuga nesciunt. Ad, praesentium necessitatibus nihil
+                    architecto
+                    pariatur nemo. Laborum, cupiditate necessitatibus!
+                </p>
+            </div>
+
+
+            <img src="Images/pic3.jpg" alt="project1_image">
+        </div>
+
+
+        <div class="project-odd">
+            <div class="odd-info">
+                <h2>Project 2.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure repudiandae beatae laborum tenetur
+                    vitae
+                    assumenda, in voluptatum facilis corrupti, asperiores iste quas non voluptatibus id porro delectus
+                    nesciunt recusandae modi consectetur!</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, voluptatibus id. Amet nihil cum, ut
+                    ratione architecto facere perspiciatis fuga nesciunt. Ad, praesentium necessitatibus nihil
+                    architecto
+                    pariatur nemo. Laborum, cupiditate necessitatibus!
+                </p>
+            </div>
+
+
+            <img src="Images/pic4.jpg" alt="project1_image">
+        </div>
+
+
+        <div class="project-even">
+            <div class="even-info">
+                <h2>Project 3.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure repudiandae beatae laborum tenetur
+                    vitae
+                    assumenda, in voluptatum facilis corrupti, asperiores iste quas non voluptatibus id porro delectus
+                    nesciunt recusandae modi consectetur!</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, voluptatibus id. Amet nihil cum, ut
+                    ratione architecto facere perspiciatis fuga nesciunt. Ad, praesentium necessitatibus nihil
+                    architecto
+                    pariatur nemo. Laborum, cupiditate necessitatibus!
+                </p>
+            </div>
+
+
+            <img src="Images/pic5.jpg" alt="project1_image">
+        </div>
+    </div>
+    <!-- END OF PROJECT-SECTION -->
+
+    <footer>
+        <div class="footHead">
+            <h2>Contact Us</h2>
+        </div>
+
+        <form class="contact-wrapper">
+            <div class="left-section">
+                <div class="row-1">
+                    <div class="form-group">
+                        <label for="name">Name*</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email*</label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                </div>
+
+                <div class="row-2">
+                    <div class="form-group">
+                        <label for="subject">Subject*</label>
+                        <input type="text" name="subject" id="subject">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone*</label>
+                        <input type="tel" name="phone" id="phone">
+                    </div>
+                </div>
+
+
+                <div class="row-3">
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="50"></textarea>
+                    </div>
+                </div>
+
+
+                <div class="row-4">
+                    <div class="form-group">
+                        <button type="submit">Submit <i class="fa-regular fa-envelope"></i></button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="right-section">
+                <a href="#"><b><i class="fa-regular fa-envelope"></i> Email: </b> yourinfo@gmail.com</a>
+                <a href="#"><b><i class="fa-solid fa-phone"></i> Phone: </b>(+)222-333-444</a>
+            </div>
+        </form>
+
+
+        <div class="endWrapper">
+            <div class="end-section">
+                <div class="copyright">
+                    Copyright &copy; 2024 | All Rights Reserved
+                </div>
+
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

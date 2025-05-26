@@ -1,0 +1,145 @@
+@font-face {
+    font-family: Ubuntu;
+    src: url(Fonts/Ubuntu-Regular.ttf);
+}
+@font-face {
+    font-family: Poppins-Bold;
+    src: url(Fonts/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(Fonts/Montserrat-Bold.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Ubuntu;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Images/Background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: rotate 6s infinite alternate linear;
+}
+
+.login-card{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    border-radius: 0.8em;
+    min-width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+    box-shadow: 0px 0px 10px #c2bbbb;
+    overflow: hidden;
+    text-align: center;
+}
+
+.login-card h1{
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Poppins-Bold;
+    word-spacing: 1.5px;
+    padding: 0.8em 0;
+    margin: 0 0.8em;
+    font-weight: bold;
+    background-image: url(Images/Background.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.login-card .text{
+    color: rgb(125, 121, 121);
+    text-decoration: underline;
+}
+
+.label-align{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 10px;
+    text-align: left;
+    color: #0c3142; 
+}
+
+.inputFields{
+    font-family: Ubuntu;
+    min-width: 80%;
+    padding: 15px 8px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    text-align: center;
+    flex-grow: 1;
+    transition: all 0.375s;
+}
+
+input[type="text"]:focus{
+    transition: all 0.375s;
+    background-color: #ebeaea;
+    outline-color: #065c84;
+}
+
+input[type="password"]:focus{
+    transition: all 0.375s;
+    background-color: #ebeaea;
+    outline-color: #065c84;
+}
+
+.login-card a{
+    margin: 0.5em 0;
+    text-decoration: none;
+     color:  #0c3142; 
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.login-card button{
+    font-family: Poppins-Bold;
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: #fff;
+    min-width: 80%;
+    text-transform: uppercase;
+    transition: all 0.375s;
+    padding: 5px 5px;
+    margin: 0.8em 0;
+    border: transparent;
+    border-radius: 8px;
+    background-image: url(Images/Background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login-card button:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+}
+
+@keyframes rotate{
+    100%{
+        background-position: 15% 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .login-card {
+        width: 90%;
+    }
+    .login-card h1 {
+        font-size: 1.8rem;
+    }
+}
