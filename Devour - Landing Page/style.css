@@ -22,6 +22,11 @@ body {
   font-family: Atkinson-Regular;
 }
 
+h1,
+h2 {
+  font-family: Atkinson-Bold;
+}
+
 /* NAVIGATION-BAR STYLING */
 nav {
   font-family: Atkinson-Regular;
@@ -121,10 +126,6 @@ nav img {
 .close-btn a {
   padding: 1em;
   width: auto;
-}
-
-body {
-  font-family: Atkinson-Bold;
 }
 
 /* INTRODUCTION-SECTION */
