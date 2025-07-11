@@ -963,6 +963,7 @@ textarea:focus {
   /* SERVICE_SECTION */
   .even,
   .odd {
+    padding: 2em;
     flex: 0 1 35%;
     margin: 10px;
   }
